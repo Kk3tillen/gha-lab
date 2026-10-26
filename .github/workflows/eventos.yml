@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'src/**/*.py'
+    schedule:
+      - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
