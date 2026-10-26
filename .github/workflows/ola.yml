@@ -7,8 +7,15 @@ on:
 jobs:
   saudacao:
     runs-on: ubuntu-latest
-    steps: |
+    steps:
+      - name: Configurar Python
+        id: setup-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Exibir informações
         run: |
           echo "Olá, ${{ github.actor }}!"
           echo "O SO utilizado é ${{ runner.os }}."
-          echo "A versão do Python que está sendo utilizada é a ${{ steps.setup-python.outputs.python-version }}.
+          echo "A versão do Python é ${{ steps.setup-python.outputs.python-version }}."
