@@ -2,8 +2,8 @@ name: Eventos e entradas
 
 on:
   push:
-    Paths:
-      - 'src/**.py'
+    paths:
+      - 'src/**/*.py'
   workflow_dispatch:
 
 jobs:
