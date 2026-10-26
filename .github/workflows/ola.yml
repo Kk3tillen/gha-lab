@@ -1,0 +1,11 @@
+name: Olá teste
+
+on: 
+  push:
+  Workflow_dispatch:
+
+jobs:
+  saudacao:
+    runs-on: ubuntu-latest
+    steps: |
+        echo "Olá, ${{ github.actor! }}! O SO utilizado é ${{ runner.os! }} e a versão do Python ${{ steps.setup-python.outputs.python-version }}."
