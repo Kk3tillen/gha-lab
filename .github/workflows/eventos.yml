@@ -1,0 +1,15 @@
+name: Eventos e entradas
+
+on:
+  push:
+    Paths:
+      - 'src/**.py'
+  workflow_dispatch:
+
+jobs:
+  eventos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: teste
+        run: | 
+          echo "teste"
