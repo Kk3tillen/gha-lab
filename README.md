@@ -49,7 +49,7 @@ python                                       # REPL: from calc import soma
 exit                                         # sai (ou Ctrl+D)
 ```
 
-### Comando avulso, sem entrar no shell:
+Comando avulso, sem entrar no shell:
 
 ```bash
 docker run --rm -v "$(pwd)":/app gha-lab-dev pytest -v
